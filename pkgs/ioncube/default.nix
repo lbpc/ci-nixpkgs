@@ -2,9 +2,8 @@
 stdenv.mkDerivation rec {
   name = "ioncube-loaders";
   src = fetchurl {
-    # XXX: "https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz"
-    url = "http://archive.intr/downloads/8kfw0iqwksm5568m56lafw9gy7p6ldcq-ioncube_loaders_lin_x86-64.tar.gz";
-    sha256 = "0q7wa45rw1np0skp44bp9v1c4pqcr6lmg40yjb7hwm0na0svkk3z";
+    url = "https://web.archive.org/web/20200922180034/https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz";
+    sha256 = "1pxpc307f9ivacpf10h2yb0chcmrr1vk50562fma37ga7kci0d03";
   };
   phases = [ "unpackPhase" "installPhase" ];
   outputs = [
